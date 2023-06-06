@@ -19,11 +19,7 @@ public class GeraPedidoHandler {
     public void execute(GeraPedido dados){
         Orcamento orcamento = new Orcamento(dados.getValorOrcamento(),dados.getQuantidadeDeItens());
         Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
-
-        SalvarPedidoNoBancoDeDados salvarPedidoNoBancoDeDados= new SalvarPedidoNoBancoDeDados();
-        EnviarEmailPedido enviarEmailPedido=new EnviarEmailPedido();
-
-       acoes.forEach(a->a.executarAcao(pedido));
+        acoes.forEach(a->a.executarAcao(pedido));
 
     }
 }

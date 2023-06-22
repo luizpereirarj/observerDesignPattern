@@ -1,5 +1,6 @@
-package br.com.alura.loja.orcamento.situacao;
+package br.com.alura.loja.situacao;
 
+import br.com.alura.loja.exception.DomainException;
 import br.com.alura.loja.orcamento.Orcamento;
 
 import java.math.BigDecimal;

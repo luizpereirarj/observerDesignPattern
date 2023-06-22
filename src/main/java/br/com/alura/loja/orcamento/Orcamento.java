@@ -1,8 +1,7 @@
 package br.com.alura.loja.orcamento;
 
-import br.com.alura.loja.orcamento.situacao.EmAnalise;
-import br.com.alura.loja.orcamento.situacao.Finalizado;
-import br.com.alura.loja.orcamento.situacao.SituacaoOrcamento;
+import br.com.alura.loja.situacao.EmAnalise;
+import br.com.alura.loja.situacao.SituacaoOrcamento;
 
 import java.math.BigDecimal;
 
@@ -43,9 +42,5 @@ public class Orcamento {
 
     public int getQuantidadeItens() {
         return quantidadeItens;
-    }
-
-    public boolean isFinalizado(){
-        return situacao instanceof Finalizado;
     }
 }
